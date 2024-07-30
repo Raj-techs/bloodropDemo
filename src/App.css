@@ -1,0 +1,1645 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  color: rgb(223, 215, 215);
+  background-color: rgb(6, 100, 1);
+  border-radius: 0px 0px 0px 10px;
+
+}
+
+.expire {
+  color: white;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #333;
+}
+
+input ,select{
+  padding: 6px;
+  border: 2px solid red;
+}
+
+
+/* Nav Bar */
+
+.nav {
+  height: 10vh;
+  background-color: rgb(143, 8, 8);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 12vh;
+}
+
+.nav .opts ul,
+.nav .more ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  position: relative;
+  line-height: 90px;
+}
+
+.nav .logo {
+  margin-bottom: 30px;
+}
+
+nav {
+  height: 20vh;
+  display: flex;
+  line-height: 11vh;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+nav .navbar {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+nav button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Add these custom styles for the dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Ensure you have these classes in your Tailwind CSS config if needed */
+.bg-gray-200 {
+  background-color: #e2e8f0;
+}
+
+.bg-gray-400 {
+  background-color: #cbd5e0;
+}
+
+.whitespace-no-wrap {
+  white-space: nowrap;
+}
+
+
+/* CONTENT SECTION */
+.content {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.aside {
+  width: 13%;
+  height: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: rgb(255, 255, 255);
+
+
+}
+
+.aside ul li {
+  font-size: 1.2em;
+  list-style: none;
+  transition: .3s;
+  color: rgb(0, 0, 0);
+  margin: 20px 10px 20px 0px;
+
+  border-radius: 10px;
+  padding: 10px 20px;
+  min-width: 180px;
+  margin-right: 27px;
+  /* transition: .9s background; */
+
+}
+
+.aside ul {
+  height: 100%;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside ul li:active {
+  background-color: red;
+
+}
+
+.aside ul li.active {
+  background-color: red;
+  color: white;
+
+}
+
+.aside-icon {
+  margin-right: 10px;
+}
+
+.content .matter {
+  height: 100%;
+  overflow-y: scroll;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+
+}
+
+.content .matter::-webkit-scrollbar {
+  display: none;
+}
+
+.dis {
+  background-color: rgb(241, 241, 244);
+  color: white;
+
+  height: 400vh;
+}
+
+
+/* ADD USER */
+.adduser {
+  height: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-position: 60% 90%;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  position: relative;
+
+}
+
+
+.adduser .inner-adduser {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 50%;
+  height: 70vh;
+  border-radius: 30px 0px 0px 30px;
+  background-color: #e2dddd;
+  padding-left: 20px;
+  position: relative;
+}
+
+.adduser .inner-adduser.single {
+  width: 90%;
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgba(2, 47, 2, 0.712);
+  background: rgba(235, 232, 232, 0.863);
+  display: flex;
+  gap: 40px;
+
+}
+
+.adduser div,
+.adduser div input {
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+}
+
+.adduser div div input {
+  border-radius: 5px;
+}
+
+.adduser div button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin-left: 150px;
+  margin-top: 40px;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.adduser .img {
+  width: 40%;
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 0px 30px 30px 0px;
+  background-image: url(https://img1.wsimg.com/isteam/ip/0d33a0f8-af75-411c-914c-543fde8fd774/Donate%20Blood%2C%20Save%20Lives.png);
+}
+
+.adduser .gif {
+  position: absolute;
+  height: 45%;
+  width: 20%;
+  bottom: 100px;
+  margin-right: 20px;
+  z-index: 10;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/public/imgs/giphy.gif);
+}
+
+.input-div {
+
+
+
+
+
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Worker PROFILE */
+
+/* WORKER PROFILE */
+.worker-profile {
+  height: 90vh;
+  gap: 10px;
+  display: flex;
+  margin: 20px;
+}
+
+.worker-profile.add-work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.worker-profile.add-work .add-work-inner {
+  box-shadow: 0px 10px 20px black;
+
+}
+
+.add-input {
+  width: 70%;
+  border-radius: 4px;
+  height: 30px;
+}
+
+.worker-img {
+  height: 95%;
+  width: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.worker-work {
+  height: 95%;
+  width: 49%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 40px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.worker-work::-webkit-scrollbar {
+  display: none;
+}
+
+.worker-work div {
+  height: 100%;
+  display: flex;
+
+}
+
+.worker-cAp {
+  height: 95%;
+  width: 25%;
+  color: black;
+  position: relative;
+
+}
+
+.worker-cAp table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.worker-cAp .msg-box {
+  padding: 10px;
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(170, 175, 170);
+  color: white;
+}
+
+.worker-cAp .msg-box textarea {
+  border-radius: 5px;
+}
+
+.worker-cAp .msg-box button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  max-width: 100px;
+  background-color: blue;
+}
+
+.confirm-btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 9px;
+}
+
+/* CHATTING WORKER */
+.scroll-msg-space {
+  position: relative;
+  height: 80%;
+  overflow-y: scroll;
+  top: 10%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://media.istockphoto.com/id/690445882/vector/social-media-blue-seamless-pattern.jpg?s=612x612&w=0&k=20&c=bashqfz8-1B2zRqj2GbOmQUupsWQyaIyzPeajhmRaWY=);
+}
+
+.scroll-msg-space .msg-space {
+  height: 1000px;
+}
+
+.scroll-msg-space .msg-space div h4 {
+  background-color: aquamarine;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.scroll-msg-space::-webkit-scrollbar {
+  display: none;
+}
+
+.msg-inputs {
+  position: relative;
+  height: 15%;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(70, 68, 65);
+  border-radius: 0px 0px 20px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.msg-inputs input {
+  padding: 10px 30px;
+  border-radius: 5px;
+  width: 75%;
+  border: 1px solid white;
+  color: black;
+}
+
+/* PAYMENT */
+.paymentdiv {
+  position: relative;
+  height: 80%;
+  top: 10%;
+  color: rgb(11, 10, 10);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.paymentdiv .payment-img {
+  height: 70%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  /* background-image: url(/public//payment.jpg); */
+}
+
+.filter-not-found {
+  height: 70vh;
+  width: 50%;
+  margin-left: 400px;
+  margin-top: 60px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/error-404-page-not-available-9561127-7706458.png);
+}
+
+.edit-option {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.6em;
+}
+
+
+/* ALL USERS */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #f7f7f7, #e7e7e7);
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #30c032;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #d01717;
+}
+
+.form-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  width: 30%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container label {
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#submit {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #3e8e41;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.usr {
+  width: 95%;
+  height: 70px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  line-height: 40px;
+
+}
+
+.usr div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3e8e41;
+  color: white;
+}
+
+/* GROUPS */
+.groups {
+  height: 200vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  gap: 60px;
+  /* overflow-y: scroll; */
+}
+
+.groups ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.groups ul li {
+  position: relative;
+  height: 28vh;
+  /* gap: 20px; */
+  width: 28vh;
+  box-shadow: 0px 10px 30px black;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  transition: .4s;
+}
+
+.groups ul li {
+  margin: 10px;
+}
+
+.groups ul li:hover {
+  box-shadow: 0px 10px 20px red;
+  transform: scale(1.08);
+}
+
+.groups ul li .simg {
+  position: absolute;
+  background-image: url(/public/imgs/b-drop.png);
+  background-position: center;
+  background-size: cover;
+  height: 120px;
+  width: 90%;
+  left: 8px;
+  z-index: -2;
+}
+
+.groups div ul {
+  display: flex;
+  gap: 30px;
+}
+
+.groups ul li h1 {
+  height: 50%;
+}
+
+.groups ul li .separate {
+  display: flex;
+  position: relative;
+  height: 50%;
+}
+
+.groups ul li .separate .active {
+  width: 50%;
+  height: 100%;
+  font-size: 1.4em;
+}
+
+.groups ul li .separate .expire {
+  height: 100%;
+  width: 50%;
+  font-size: 1.4em;
+}
+
+.groups ul li .separate.middle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  width: 100%;
+  top: 80px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.groups ul li .separate.middle p {
+  border-radius: 0px 0px 0px 0px;
+  background-color: black;
+}
+
+.groups ul li .separate.middle:nth-child(4) p {
+  border-radius: 0px 0px 0px 0px;
+  background-color: rgb(216, 216, 216);
+}
+
+.groups ul .secondary-boxs {
+  width: 29%;
+  height: 35%;
+}
+
+.singleG-head {
+  height: 20vh;
+
+  width: 100%;
+  line-height: 20vh;
+  position: relative;
+  display: flex;
+  top: 0;
+  /* position: fixed; */
+
+}
+
+.singleG-head .singlebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14vh;
+  border-radius: 10px;
+  width: 14vh;
+  margin: 30px;
+  box-shadow: 0px 10px 30px black;
+}
+
+.singleG-head ul {
+  list-style: none;
+  display: flex;
+  gap: 150px;
+  justify-content: left;
+  align-items: start;
+}
+
+.singleG-body .singleG-scroll {
+  height: 400px;
+  overflow-y: scroll;
+
+}
+
+
+
+
+/* TRANFER */
+.transfer {
+  height: 10vh;
+  width: 95%;
+  /* background: #333; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: -10;
+  margin-top: 210px;
+}
+
+.transfer-anim {
+  position: relative;
+  bottom: 120px;
+  width: 95%;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blue; */
+  z-index: -1;
+}
+
+.transfer-anim .img1 {
+  background-image: url(/public/imgs/hospital-1.png);
+  height: 200px;
+  width: 200px;
+  position: relative;
+  bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.transfer-anim .img2 {
+  background-image: url(/public/imgs/hospital-2.png);
+  height: 120px;
+  width: 220px;
+  position: relative;
+  bottom: 39px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.transfer-anim .car {
+
+  background-image: url(/public/imgs/ambulance.gif);
+  height: 100px;
+  width: 120px;
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 15;
+  animation: carMove 13s linear 2s forwards;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes carMove {
+  0% {
+
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(900px) scale(1.4);
+
+  }
+
+  100% {
+    transform: translateX(1000px) rotateY(180deg);
+
+  }
+}
+
+.transfer .transfer-divs {
+  width: 95%;
+  height: 700px;
+  /* overflow-y: scroll; */
+  display: flex;
+  gap: 10px;
+
+}
+
+.transfer .transfer-divs .transfer-div {
+  padding: 20px;
+  width: 30%;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px black;
+
+}
+
+.transfer .transfer-divs .transfer-div p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* FOOTER  */
+
+.footer {
+  height: 70vh;
+  background-color: #8F0808;
+  /* width: 100%; */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 0px;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.footer .foot-divs,
+.footer .foot-scroll,
+.footer .foot-last {
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.footer .foot-divs .foot-div p {
+  font-size: .9em;
+}
+
+.footer .foot-divs .foot-div {
+  padding: 30px;
+}
+
+.footer .foot-scroll {
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .foot-scroll marquee .inner-marq {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  justify-content: space-around;
+
+}
+
+.footer .foot-scroll marquee div {
+  height: 100px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.footer .foot-scroll marquee .inner-marq div:nth-child(1) {
+  background-image: url(/public/imgs/logo-nrhm.png);
+  height: 100px;
+  width: 350px;
+}
+
+.footer .foot-scroll marquee .inner-marq div:nth-child(2) {
+  width: 350px;
+  background-image: url(/public/imgs/india-gov.png);
+}
+
+.footer .foot-scroll marquee .inner-marq div:nth-child(3) {
+  width: 350px;
+  background-image: url(/public/imgs/logo_nhp_back.png);
+}
+
+.footer .foot-scroll marquee .inner-marq div:nth-child(4) {
+  width: 350px;
+  background-image: url(/public/imgs/MOHF.png);
+}
+
+.all-users {
+  margin-top: 100px;
+}
+
+/* USER CONTENT */
+.usr-auth {
+  height: 90vh;
+  /* background-image: url(https://c1.wallpaperflare.com/preview/11/461/86/blood-cells-red-medical.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.usr-auth .usr-card {
+  height: 90%;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.575);
+  color: white;
+  border-radius: 8px;
+}
+
+.usr-inp {
+  border-radius: 8px;
+  padding: 15px 30px;
+  background-color: rgba(43, 43, 43, 0.461);
+  margin: 10px;
+  color: white;
+
+}
+
+.usr-inp::placeholder {
+  color: rgba(255, 255, 255, 0.584);
+
+}
+
+.usr-auth .usr-card .usr-btn {
+  padding: 10px 70px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: red;
+}
+
+.more-img {
+  height: 90px;
+  width: 70px;
+  background-size: cover;
+
+  background-image: url(/public/imgs/b-drop.png);
+
+}
+
+.place-on {
+  position: absolute;
+  top: 16px;
+  left: 70px;
+}
+
+.container {
+  height: 100vh;
+
+}
+
+.container .my-status {
+  display: flex;
+  flex-direction: column;
+  height: 65vh;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: start;
+  margin-top: 20px;
+}
+
+.container .my-status div {
+  display: flex;
+  gap: 60px;
+}
+
+.container .my-status div .g .g-img {
+  background-image: url(/public/imgs/b-drop.png);
+  height: 400px;
+  width: 500px;
+  background-size: cover;
+
+  background-image: url(/public/imgs/b-drop.png);
+}
+
+.container .my-status div .g .g-matter {
+  position: absolute;
+  font-size: 5em;
+  top: 200px;
+  left: 200px;
+  color: white;
+
+}
+
+.container .my-status div .g,
+.container .my-status div .state-details {
+  width: 100%;
+  height: 99%;
+  position: relative;
+}
+
+.state-details .state-adduser table {
+  width: 400px;
+  z-index: -2;
+  border: none;
+}
+
+.state-details .relative {
+  width: 400px;
+  position: relative;
+  border-radius: 100px 10px 100px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  background: rgba(216, 134, 134, 0.402);
+
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.family-details {
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 150px;
+}
+
+.container .donated {
+  height: 75vh;
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin-top: 30px;
+  /* border-radius: 100px 10px 100px ; */
+  backdrop-filter: blur(5px);
+  background: rgba(216, 134, 134, 0.402);
+}
+
+.donated .donated-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px;
+}
+
+.no-design {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: white;
+
+}
+
+.donated .donated-divs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+
+  align-items: center;
+  margin-top: 40px;
+  /* height: 60vh; */
+}
+
+.donated .donated-divs .donated-div:nth-child(1) {
+  height: 300px;
+  width: 40%;
+  background-color: #333;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  background-image: url(https://content.jdmagicbox.com/comp/hyderabad/85/040p7315985/catalogue/red-cross-blood-bank-vidya-nagar-hyderabad-blood-banks-z9vkxpbue8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.donated .donated-divs .donated-div:nth-child(2) {
+  height: 300px;
+  width: 40%;
+  background-color: #333;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  background-image: url(https://anandrishijihospital.com/wp-content/uploads/2024/01/IMG-20231226-WA0006-1024x687.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.donated .donated-divs .donated-div:nth-child(3) {
+  height: 300px;
+  width: 40%;
+  background-color: #333;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  background-image: url(https://assets.thehansindia.com/h-upload/2020/05/02/966166-vijayasri-blood-banks.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container .msgs {
+  margin-top: 60px;
+  height: 20vh;
+  color: white;
+  padding: 25px;
+  text-align: justify;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://i.makeagif.com/media/1-14-2019/dob7jv.gif);
+}
+
+
+/* USER REQUEST */
+.user-req {
+  height: 90vh;
+  padding: 50px;
+  width: 100%;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* align-items: center; */
+  background-color: #c2c1c1a1;
+}
+
+.user-req .usrDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 60vh;
+}
+
+.user-req .usrDetails div {
+  width: 50%;
+}
+
+.user-req div .usrDetails p input {
+  border-radius: 9px;
+  margin: 10px;
+}
+
+.user-req .req {
+  width: 100%;
+}
+
+.user-req .reqImg {
+  width: 50%;
+  height: 40vh;
+}
+
+.usr-input {
+  width: 400px;
+}
+
+.send-btn {
+  padding: 10px 70px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: red;
+}
+
+.complete-btn {
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  min-width: 130px;
+  text-align: center;
+  margin: 5px;
+  background-color: rgb(238, 48, 0);
+}
+
+.update-btn {
+  padding: 10px 10px;
+  /* min-width: 130px; */
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(10, 150, 17);
+}
+
+/* GOVERNMENT  */
+.gov-dash {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  bottom: 100px;
+}
+
+.gov-dash .divs {
+  width: 400px;
+  height: 29vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  font-size: 1.5em;
+  background-color: #d2d0d0;
+  transition: .3s;
+}
+
+.gov-dash .divs:hover h3 {
+  color: white;
+}
+
+.gov-dash .divs:hover h2 {
+  color: rgb(239, 211, 32);
+}
+
+i.fa-solid.fa-user {
+  background-color: #949292;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.gov-dash .divs:hover {
+  color: rgb(1, 1, 1);
+  background-color: rgb(48, 50, 46);
+  box-shadow: 0px 10px 20px red;
+}
+
+.gov-dash .divs i {
+  font-size: 3em;
+}
+
+.gov-dash .divs:hover i {
+  color: red;
+}
+
+/* REQUEST PAGE GOV */
+.gov-req {
+  width: 90%;
+  height: 90%;
+}
+
+.gov-req h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: start;
+  position: relative;
+}
+
+.gov-req table {
+  width: 100%;
+}
+
+.gov-req-count {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: -6px;
+  left: 120px;
+  border-radius: 50%;
+  padding: 10px 15px;
+
+}
+
+.allocate {
+  position: relative;
+  height: 1vh;
+
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+
+summary {
+  list-style: none;
+}
+
+table .gov-req-head.small {
+  width: 200px;
+  padding: 100px;
+}
+
+.gov-transfer {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gov-transfer .gov-trans-btns {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+}
+
+.gov-transfer table {
+  width: 90%;
+}
+
+.gov-transfer table tr th {
+  background-color: black;
+  color: white;
+}
+
+.req-btn {
+  padding: 10px 20px;
+  background-color: #991B1B;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+}
+
+/* GOV NAV */
+
+.menu {
+  height: 80vh;
+  width: 240px;
+  border-radius: 10px;
+  /* background-color: black; */
+  color: white;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu .submenu {
+  padding: 20px;
+  color: white;
+  font-size: 1.2em;
+  display: none;
+}
+
+.menu .list-1 {
+  font-size: 1.2em;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  /* Set cursor to pointer on hover */
+}
+
+.menu .list-1.selected {
+  background-color: #888;
+  /* Change background color for selected div */
+}
+
+.menu .submenu.active {
+  display: block;
+}
+
+.menu .submenu ul {
+  list-style: none;
+}
+
+.menu .submenu ul li {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.no-transfer {
+  height: 30vh;
+  width: 50%;
+  /* background-image: url(https://www.awesome-jobs.com/images/post/no-transfer-government-jobs.png); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+/* TOTAL BANKS */
+.total-banks {
+  /* margin-top: 200px; */
+  height: 80vh;
+  width: 93%;
+  gap: 20px;
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 19% 85%;
+  background-color: white;
+}
+
+.total-header {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.total-bank {
+  background-color: rgb(252, 252, 252);
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.total-bank::-webkit-scrollbar {
+  display: none;
+}
+
+.total-users {
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+}
+
+.total-users::-webkit-scrollbar {
+  display: none;
+}
+
+.special-c {
+  height: 80vh;
+  width: 97%;
+  background-color: white;
+
+}
+
+.special-card {
+  width: 15%;
+  height: 28%;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #987575;
+  color: white;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SearchDonar */
+.search-donars-outer {
+  width: 100%;
+  height: 123vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+
+.search-donars {
+  height: 123vh;
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+  background-color: rgb(207, 207, 215);
+  width: 90%;
+  border-radius: 40px 40px 0px 0px;
+
+  margin-top: 20px;
+}
+
+.search-donars .head,
+.search-div h4 {
+  background-color: red;
+  width: 100%;
+  height: 40px;
+  text-align: start;
+  color: white;
+  text-indent: 20px;
+  line-height: 40px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.search-outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-div {
+  width: 30%;
+  margin-top: 20px;
+  border: 2px solid red;
+  height: 60vh;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgb(208, 214, 216);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.search-div form div span {
+  width: 60%;
+}
+
+.search-div form div select {
+  width: 60%;
+}
+
+.search-div form div {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.search-outer .note {
+  width: 80%;
+  border: 2px solid red;
+  background-color: lightblue;
+
+}
+
+.search-outer .search-table {
+  height: 40vh;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+.search-outer .search-table::-webkit-scrollbar {
+  display: none;
+}
+
+.search-outer .search-table div,
+.search-outer .search-table div table {
+  width: 100%;
+
+}
+.search-table{
+  overflow-y: scroll;
+}
+/* SEARCH BLOOD BANKS */
+.search-bbank {
+  height: 100vh;
+  width: 95%;
+  margin-left: 2%;
+}
+
+.search-bbank-block div .inputs {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border: 1px solid black;
+
+}
+
+.search-bbank-block div .inputs select {
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 20%;
+  border: 1px solid rgb(143, 135, 135);
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+
+.search-bbank-data {
+  height: 40vh;
+  margin-top: 10px;
+}
+
+.searchnearby {
+  position: relative;
+  height: 150vh;
+  display: flex;
+  z-index: -1;
+  padding: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+} 
+.maps{
+  height: 450px;
+  width: 80%;
+  background-color: lightblue;
+  border-radius: 20px;
+  background-image: url(https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/02/Google-Maps-icon-on-map.webp?ssl=1&quality=80&w=f);
+  background-size: cover; 
+}
