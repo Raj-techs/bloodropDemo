@@ -6,23 +6,23 @@ import Swal from 'sweetalert2';
 const dummyRequests = [
     {
         id: '1',
-        username: 'John Doe',
-        group: 'O+',
-        units: 2,
-        usrlocation: 'New York',
+        username: 'B Tarun',
+        group: 'B+',
+        units: 5,
+        usrlocation: 'Bhimavaram',
         date: '2024-07-30',
         certificates: ['https://img.freepik.com/premium-vector/certificate-blood-donation-04_983286-1509.jpg', 'https://static.vecteezy.com/system/resources/previews/023/841/229/non_2x/blood-donation-charity-certificate-donor-day-heart-vector.jpg'],
-        mobile: '123-456-7890',
+        mobile: '9876543210',
     },
     {
         id: '2',
-        username: 'Jane Smith',
+        username: 'V Ravi',
         group: 'A-',
         units: 1,
-        usrlocation: 'Los Angeles',
-        date: '2024-07-29',
+        usrlocation: 'Guntur',
+        date: '2024-07-31',
         certificates: ['https://img.freepik.com/premium-vector/certificate-blood-donation-04_983286-1509.jpg', 'https://static.vecteezy.com/system/resources/previews/023/841/229/non_2x/blood-donation-charity-certificate-donor-day-heart-vector.jpg'],
-        mobile: '987-654-3210',
+        mobile: '9876746847',
     },
 ];
 
